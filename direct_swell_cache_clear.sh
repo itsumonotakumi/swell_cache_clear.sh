@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ログファイル設定
-LOG_FILE="/home/howtobuy/logs/swell_cache.log"
+LOG_FILE="/home/USERNAME/logs/swell_cache.log"
 mkdir -p "$(dirname "$LOG_FILE")"
 
 # ログ関数
@@ -9,7 +9,7 @@ log_message() {
     echo "$(date '+%Y-%m-%d %H:%M:%S'): $1" | tee -a "$LOG_FILE"
 }
 
-cd /home/howtobuy/itsutaku.com/public_html/cheapest
+cd /home/USERNAME/WP-SITEDOMAIN/public_html/cheapest
 
 log_message "=== 直接DB操作によるキャッシュクリア開始 ==="
 
