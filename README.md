@@ -1,0 +1,2 @@
+# swell_cache_clear.sh
+Swellのキャッシュを自動削除するバッチファイル
